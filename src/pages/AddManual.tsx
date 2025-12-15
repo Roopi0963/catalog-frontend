@@ -166,7 +166,7 @@
 // export default AddManual;
 
 import { useState } from "react";
-// import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { springApi } from "../api/axiosConfig";
 import { toast } from "react-hot-toast";
 
