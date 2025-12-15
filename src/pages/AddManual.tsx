@@ -183,6 +183,7 @@ function AddManual() {
     description: "",
     brand: "",
     discount: 0,
+    releaseDate: new Date().toISOString(),
   });
 
   const [imageFile, setImageFile] = useState<File | null>(null);
@@ -221,7 +222,7 @@ function AddManual() {
         brand: formData.brand || "Generic",
         discount: 0,
         productAvailable: true,
-        releaseDate: new Date(),
+        releaseDate: new Date().toISOString(),
       });
 
       data.append("product", productJson);
